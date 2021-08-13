@@ -162,7 +162,8 @@ export async function getEpisodeLinks(id: string, episode: int) {
 
 				animeStreamingLinkGogo = $('li.anime').children('a').attr('data-video') as string;
 
-				const downloadsLinkGogo = 'https:' + animeStreamingLinkGogo.replace('streaming.php', 'download');
+				const downloadsLinkGogo =
+					'https://cors-anywhere.herokuapp.com/https:' + animeStreamingLinkGogo.replace('streaming.php', 'download');
 
 				await axios
 					.get(downloadsLinkGogo)

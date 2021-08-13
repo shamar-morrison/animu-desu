@@ -22,7 +22,8 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
-    "cheerio": "^1.0.0-rc.5"
+    "cheerio": "^1.0.0-rc.5",
+    "cors-anywhere": "^0.4.4"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
